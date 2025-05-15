@@ -56,24 +56,24 @@ export default class Banner extends React.PureComponent {
             className={`${this.props.className}-text`}
             delay={300}
           >
-            <h1 key="h1">Motion Design</h1>
-            <h3 key="h3">Animation specification and components of Ant Design.</h3>
+            <h1 key="h1">LYNCH'S TOOL</h1>
+            <h3 key="h3">BEST WEB3 TOOL</h3>
             <p key="p">
               <FormattedMessage id="app.home.introduce" />
               <br />
               <FormattedMessage id="app.home.introduce2" />
             </p>
             <div key="button">
-              <Link
-                to={utils.getLocalizedPathname('/language/basic', isZhCN)}
-                className={`${this.props.className}-text-button`}
-              >
-                <FormattedMessage id="app.home.learn-more" />
-                <i />
-              </Link>
+              {/*<Link*/}
+              {/*  to={utils.getLocalizedPathname('/language/basic', isZhCN)}*/}
+              {/*  className={`${this.props.className}-text-button`}*/}
+              {/*>*/}
+              {/*  <FormattedMessage id="app.home.learn-more" />*/}
+              {/*  <i />*/}
+              {/*</Link>*/}
               <a
                 className={`${this.props.className}-text-button template`}
-                href={`https://landing.ant.design/edit${utils.getLocalizedPathname('/', isZhCN)}`}
+                href="https://x.com/lynch_btc"
                 target="_blank"
               >
                 <FormattedMessage id="app.home.enter-editor" />

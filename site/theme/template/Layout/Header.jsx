@@ -112,15 +112,15 @@ class Header extends React.PureComponent {
         </li>
       );
     });
-    const gitBtn = (
-      <span className="git-btn">
-        <GitHubButton
-          type="stargazers"
-          namespace="ant-design"
-          repo="ant-motion"
-        />
-      </span>
-    );
+    // const gitBtn = (
+    //   <span className="git-btn">
+    //     <GitHubButton
+    //       type="stargazers"
+    //       namespace="ant-design"
+    //       repo="ant-motion"
+    //     />
+    //   </span>
+    // );
 
     navToRender.push(
       <li key="lang" className="lang-btn">
@@ -129,13 +129,13 @@ class Header extends React.PureComponent {
         </Button>
       </li>
     );
-    if (!this.props.isMobile) {
-      navToRender.push(
-        <li key="git" className="git-btn-li">
-          {gitBtn}
-        </li>
-      );
-    }
+    // if (!this.props.isMobile) {
+    //   navToRender.push(
+    //     <li key="git" className="git-btn-li">
+    //       {gitBtn}
+    //     </li>
+    //   );
+    // }
     return (
       <header
         className={`${this.props.className}-wrapper${this.state.phoneOpen ? ' open' : ''}`}
@@ -153,7 +153,7 @@ class Header extends React.PureComponent {
               }}
             >
               <img className="logo-img" alt="img" height="24" src="https://zos.alipayobjects.com/rmsportal/TOXWfHIUGHvZIyb.svg" />
-              <img alt="img" height="14" src="https://zos.alipayobjects.com/rmsportal/bNfCyCcgnyTgRmz.svg" />
+              {/*<img alt="img" height="14" src="https://zos.alipayobjects.com/rmsportal/bNfCyCcgnyTgRmz.svg" />*/}
             </Link>
           </TweenOne>
           {this.props.isMobile && gitBtn}

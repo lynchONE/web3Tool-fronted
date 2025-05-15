@@ -35,25 +35,25 @@ class Home extends React.PureComponent {
         <div className="home-wrapper">
           <div className="nav-wrapper">
             <ScrollLink to="banner" showHeightActive={['100%', '30%']} toHash={false} />
-            <ScrollLink to="page1" showHeightActive="30%" toHash={false} />
-            <ScrollLink to="page2" showHeightActive={['30%', '70%']} toHash={false} />
-            <ScrollLink to="page3" showHeightActive="70%" toHash={false} />
+            {/*<ScrollLink to="page1" showHeightActive="30%" toHash={false} />*/}
+            {/*<ScrollLink to="page2" showHeightActive={['30%', '70%']} toHash={false} />*/}
+            {/*<ScrollLink to="page3" showHeightActive="70%" toHash={false} />*/}
           </div>
           <Banner {...this.props} isZhCN={isZhCN} />
-          <Page1
-            pageData={this.props.localizedPageData}
-            utils={this.props.utils}
-            tweenAnim={this.tweenAnim}
-            onButtonClick={this.scrollToTop}
-            isZhCN={isZhCN}
-          />
-          <Page2
-            pageData={this.props.localizedPageData}
-            utils={this.props.utils}
-            tweenAnim={this.tweenAnim}
-            onButtonClick={this.scrollToTop}
-          />
-          <Page3 onButtonClick={this.scrollToTop} isZhCN={isZhCN} />
+          {/*<Page1*/}
+          {/*  pageData={this.props.localizedPageData}*/}
+          {/*  utils={this.props.utils}*/}
+          {/*  tweenAnim={this.tweenAnim}*/}
+          {/*  onButtonClick={this.scrollToTop}*/}
+          {/*  isZhCN={isZhCN}*/}
+          {/*/>*/}
+          {/*<Page2*/}
+          {/*  pageData={this.props.localizedPageData}*/}
+          {/*  utils={this.props.utils}*/}
+          {/*  tweenAnim={this.tweenAnim}*/}
+          {/*  onButtonClick={this.scrollToTop}*/}
+          {/*/>*/}
+          {/*<Page3 onButtonClick={this.scrollToTop} isZhCN={isZhCN} />*/}
         </div>
       </DocumentTitle>
     );

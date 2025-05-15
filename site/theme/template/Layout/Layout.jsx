@@ -117,7 +117,7 @@ class Layout extends React.PureComponent {
                 childrenToRender
               }
             </TweenOne.TweenOneGroup>
-            <Footer {...this.props} />
+            {/*<Footer {...this.props} />*/}
           </div>
         </ConfigProvider>
       </IntlProvider>

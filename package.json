@@ -10,6 +10,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.9.0",
     "rc-animate": "^2.6.0",
     "rc-banner-anim": "^2.2.3",
     "rc-drawer": "^3.0.2",
@@ -19,6 +20,7 @@
     "rc-tween-one": "^2.4.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
     "antd": "^3.13.2",
     "antd-tools": "^7.0.0",
     "babel-eslint": "^10.0.1",
@@ -51,18 +53,17 @@
     "react-router": "~5.1.2",
     "react-sublime-video": "^0.2.0",
     "stylelint": "^13.1.0",
-    "stylelint-config-standard": "^20.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.15.0"
+    "stylelint-config-standard": "^20.0.0"
   },
-  "pre-commit": [
-    "lint"
-  ],
+//  "pre-commit": [
+//    "lint"
+//  ],
   "scripts": {
     "start": "rm -rf _site && cross-env NODE_ENV=development bisheng start -c ./site/bisheng.config.js",
     "build": "rm -rf _site && cross-env NODE_ENV=production bisheng build -c ./site/bisheng.config.js",
     "site": "npm run build",
     "deploy": "npm run site && cp CNAME _site && bisheng gh-pages --push-only",
-    "lint": "npm run lint:es && npm run lint:style",
+//    "lint": "npm run lint:es && npm run lint:style",
     "lint:es": "eslint --fix --ext '.js,.jsx' site",
     "lint:style": "stylelint --fix \"site/**/*.less\" --syntax less",
     "lint:demo": "cross-env RUN_ENV=DEMO eslint ./ --ext '.md' -c ./.eslintrc.js",

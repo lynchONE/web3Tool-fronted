@@ -31,7 +31,7 @@ class Home extends React.PureComponent {
     const { pathname } = this.props.location;
     const isZhCN = utils.isZhCN(pathname);
     return (
-      <DocumentTitle title="Ant Motion - Ant Design 的动效规范与组件">
+      <DocumentTitle title="lynch's web3tool">
         <div className="home-wrapper">
           <div className="nav-wrapper">
             <ScrollLink to="banner" showHeightActive={['100%', '30%']} toHash={false} />
